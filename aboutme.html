@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+        <style>
+        
+        
+
+        .about-me {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .profile-pic {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h1 {
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .about-text p {
+            line-height: 1.6;
+            color: #ffffff;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Responsive: stack on mobile */
+        @media (max-width: 600px) {
+            .about-me {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-pic {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+
+    <body>
+    <canvas id="c"></canvas>
+    <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <a href="index.html" class="logo">Bilke.rs</a>
+        <ul class="nav-links">
+            <i class="uil uil-times navCloseBtn"></i>
+
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="contact.html" class="JAZ">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    </nav>
+    <div class="nav-spacer"></div>
+
+    <section class="about-me">
+        <img src="images/IMG_20251013_211256_210.webp"Your Name" class="profile-pic">
+        <div class="about-text">
+            <h1>About Me</h1>
+            <p>Hello! I’m Luka, a passionate photographer and digital artist. 
+                I love capturing unique moments and sharing my creative vision with the world.
+                I shoot Nikon&trade; and I just love shitting on Fuji owners!
+             </p>
+        </div>
+    </section>
+</html>
